@@ -1,0 +1,9 @@
+.image {
+  width: 100%;
+  height: auto;
+}
+.item {
+  padding: 0.25em;
+
+  font-size: 1rem;
+}

@@ -1,0 +1,21 @@
+{
+  "paths": {
+    "source": "./src",
+    "compiled": "./lib"
+  },
+
+  "parts": [
+    {
+      "name": "part:sketchfab/input",
+      "path": "sketchfabInput.js"
+    },
+    {
+      "name": "part:sketchfab/schema",
+      "path": "schema.js"
+    },
+    {
+      "implements": "part:@sanity/base/schema-type",
+      "path": "schema.js"
+    }
+  ]
+}

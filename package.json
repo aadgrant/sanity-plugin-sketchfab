@@ -1,0 +1,47 @@
+{
+  "name": "sanity-plugin-sketchfab",
+  "version": "1.0.0",
+  "main": "lib/sketchfabInput.js",
+  "author": "Andrew Grant <andrew@aadgrant.co.uk>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "babel src --copy-files --out-dir lib --watch",
+    "prepublishOnly": "npm run clean && babel src --copy-files --out-dir lib",
+    "clean": "rimraf lib"
+  },
+  "keywords": [
+    "sanity",
+    "sanity-plugin"
+  ],
+  "peerDependencies": {
+    "@sanity/base": ">=2.0.9",
+    "@sanity/components": ">=2.0.9",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "swr": "^0.4.2"
+  },
+  "devDependencies": {
+    "@sanity/base": "2.0.9",
+    "@sanity/components": "2.0.9",
+    "babel-cli": "^6.20.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^7.20.0",
+    "eslint-config-sanity": "^5.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "lodash": "^4.17.21",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8",
+    "rimraf": "^3.0.2",
+    "swr": "^0.4.2"
+  },
+  "resolutions": {
+    "@popperjs/core": "2.8.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "moduleResolution": "node",
+    "target": "es5",
+    "esModuleInterop": true,
+    "module": "es2015",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib",
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "part:@sanity/form-builder/patch-event": [
+        "./node_modules/@sanity/form-builder/lib/PatchEvent.d.js"
+      ],
+      "part:@sanity/components/buttons/default-style": ["./test/__mocks__/styleMock.js"],
+      "part:@sanity/components/buttons/default": [
+        "./node_modules/@sanity/components/lib/buttons/DefaultButton.js"
+      ],
+      "part:@sanity/components/buttons/button-grid": [
+        "./node_modules/@sanity/components/lib/buttons/ButtonGrid.js"
+      ],
+      "part:@sanity/components/fieldsets/default": [
+        "./node_modules/@sanity/components/src/fieldsets/DefaultFieldset.js"
+      ],
+      "config:bynder-input": ["./config.dist.json"]
+    }
+  },
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,18 @@
+{
+  "env": {
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react-hooks"
+  ],
+  "extends": [
+    "sanity",
+    "sanity/react",
+  ],
+  "rules": {
+    "newline-per-chained-call": 0,
+    "sort-imports": 0,
+    "complexity": 0,
+  }
+}
